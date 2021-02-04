@@ -33,13 +33,20 @@
                 android:layout_height="75dp" android:id="@+id/btn_nouvelle_fiche"
                 android:background="@drawable/btn_accueil" android:layout_gravity="center"
                 android:layout_marginTop="100dp" android:layout_marginBottom="20dp"
-                style="@style/btn_accueil"/>
+                style="@style/btn_accueil" android:drawableLeft="@drawable/img_fiche"
+                android:drawablePadding="2dip"
+                android:paddingLeft="30dip"
+                android:paddingRight="26dip"/>
         <Button
                 android:text="Fiches bilans"
                 android:layout_width="375dp"
                 android:layout_height="75dp" android:id="@+id/btn_fiches"
                 android:background="@drawable/btn_accueil" android:layout_gravity="center"
-                android:layout_marginBottom="50dp" android:layout_marginTop="20dp" style="@style/btn_accueil"/>
+                android:layout_marginBottom="50dp" android:layout_marginTop="20dp" style="@style/btn_accueil"
+                android:drawableLeft="@drawable/img_suivi_fiche"
+                android:drawablePadding="2dip"
+                android:paddingLeft="30dip"
+                android:paddingRight="80dip"/>
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -48,13 +55,21 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp" android:id="@+id/btn_sortir"
                     android:background="@drawable/btn_accueil_sortie" android:gravity="top|left"
-                    android:layout_gravity="center" android:layout_marginLeft="20dp"/>
+                    android:layout_gravity="center" android:layout_marginLeft="20dp"
+                    android:drawableStart="@drawable/img_sortir"
+                    android:drawablePadding="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"/>
             <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp" android:id="@+id/btn_parametre"
                     android:background="@drawable/btn_accueil_parametre"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="276dp"/>
+                    android:layout_marginLeft="265dp"
+                    android:drawableStart="@drawable/img_parametre"
+                    android:drawablePadding="10dip"
+                    android:paddingLeft="19dip"
+                    android:paddingRight="10dip"/>/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
