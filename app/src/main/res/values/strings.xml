@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Fiche bilan des interventions</string>
+    <string name="heure_incident">Heure présume de l\'incidnet :</string>
+    <string name="lieu">Lieu :</string>
+    <string name="vie_privee">Vie privée</string>
+    <string name="travail">Travail</string>
+    <string name="voie_public">Voie public</string>
+    <string name="sport">Sport</string>
+    <string name="type">Type :</string>
+    <string name="precision">Précision :</string>
+    <string name="Si_accident_voie_pulique">Si accident de la voie pulique</string>
+    <string name="blesse">Le blessé :</string>
+    <string name="contre">Contre :</string>
+    <string name="pieton">Piéton</string>
+    <string name="auto">auto</string>
+    <string name="vehicule_agricole">Véhicule agricole</string>
+    <string name="cycliste">Cycliste</string>
+    <string name="bus">Bus</string>
+    <string name="train">Train</string>
+    <string name="moto">Moto</string>
+    <string name="Poids_lourd">Poids lourd</string>
+    <string name="autre">Autre</string>
+    <string name="mur">Mur</string>
+    <string name="arbre">Arbre</string>
+    <string name="Si_conducteur_blesse">Si conducteur blessé</string>
+    <string name="hors_vehicule">Hors véhicule</string>
+    <string name="dans_vehicule">Dans véhicule</string>
+
 </resources>

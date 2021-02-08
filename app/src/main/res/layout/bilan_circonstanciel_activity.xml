@@ -8,502 +8,547 @@
         tools:context=".BilanCirconstancielActivity" android:id="@+id/lv_travail">
 
     <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="194dp"
-            android:layout_height="57dp" tools:layout_editor_absoluteY="46dp" tools:layout_editor_absoluteX="48dp"
-            android:id="@+id/ll_heure">
-        <TextView
-                android:text="Heure présume de l'incidnet :"
-                android:layout_width="81dp"
-                android:layout_height="wrap_content" android:id="@+id/tv_heure"/>
-        <EditText
-                android:layout_width="83dp"
-                android:layout_height="wrap_content"
-                android:inputType="date"
-                android:ems="10"
-                android:id="@+id/editTextDate"/>
-    </LinearLayout>
-    <LinearLayout
             android:orientation="vertical"
-            android:layout_width="399dp"
-            android:layout_height="223dp" tools:layout_editor_absoluteY="46dp" tools:layout_editor_absoluteX="495dp"
-            android:id="@+id/ll_type">
-        <TextView
-                android:text="TextView"
-                android:layout_width="259dp"
-                android:layout_height="wrap_content" android:id="@+id/tv_type" android:layout_weight="1"/>
-        <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/spn_type" android:layout_weight="1"/>
-        <TextView
-                android:text="TextView"
-                android:layout_width="216dp"
-                android:layout_height="wrap_content" android:id="@+id/tv_precision" android:layout_weight="1"/>
-        <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:text="Name"
-                android:ems="10"
-                android:id="@+id/et_precision" android:layout_weight="1"/>
-    </LinearLayout>
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="393dp"
-            android:layout_height="158dp" tools:layout_editor_absoluteY="123dp" tools:layout_editor_absoluteX="52dp"
-            android:id="@+id/ll_lieu">
-        <TextView
-                android:text="TextView"
-                android:layout_width="75dp"
-                android:layout_height="54dp" android:id="@+id/tv_lieu" android:layout_weight="1"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/ll_global">
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="86dp" android:layout_weight="1" android:id="@+id/ll_lieu1">
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/ll_vie_prive">
-                <Button
-                        android:text="Button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/btn_vie_prive" android:layout_weight="1"/>
-                <TextView
-                        android:text="TextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/lv_vie_prive" android:layout_weight="1"/>
-            </LinearLayout>
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/ll_travail">
-                <Button
-                        android:text="Button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/btn_travail" android:layout_weight="1"/>
-                <TextView
-                        android:text="TextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="95dp" android:layout_weight="1" android:id="@+id/ll_lieu_2">
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/ll_voie_public">
-                <Button
-                        android:text="Button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/btn_voie_public" android:layout_weight="1"/>
-                <TextView
-                        android:text="TextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/lv_voie_public" android:layout_weight="1"/>
-            </LinearLayout>
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/ll_sport">
-                <Button
-                        android:text="Button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/btn_sport" android:layout_weight="1"/>
-                <TextView
-                        android:text="TextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/lv_sport" android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="585dp"
-            android:layout_height="213dp" tools:layout_editor_absoluteY="327dp"
-            tools:layout_editor_absoluteX="29dp" android:id="@+id/ll_accident">
-        <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tv_si_inccident"/>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="29dp" android:id="@+id/ll_titre_accident">
-            <TextView
-                    android:text="TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/lv_blesse" android:layout_weight="1"/>
-            <TextView
-                    android:text="TextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/lv_contre" android:layout_weight="1"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="72dp" android:layout_weight="1" android:id="@+id/ll_accident_bouton">
+                android:layout_height="244dp" android:id="@+id/ll_global_ligne1">
             <LinearLayout
                     android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/ll_blesse">
+                    android:layout_width="486dp"
+                    android:layout_height="match_parent"
+            >
                 <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" android:layout_weight="1"
-                        android:id="@+id/ll_blesse_ligne1">
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_pieton_blesse">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btnll_pieton_blesse"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_pieton_blesse"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_auto_contre_blesse">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_auto_blesse"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_auto_blesse"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_vehi_agricole_blesse">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_vehi_agricole_blesse"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_vehi_agricole_blesse"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
+                        android:layout_height="57dp" tools:layout_editor_absoluteY="46dp"
+                        tools:layout_editor_absoluteX="48dp"
+                        android:id="@+id/ll_heure"
+                        android:background="@drawable/ll_rectangle_bord_haut_gauche_rond"
+                >
+                    <TextView
+                            android:text="@string/heure_incident"
+                            android:layout_width="121dp"
+                            android:layout_height="wrap_content" android:id="@+id/tv_heure"
+                    />
+                    <EditText
+                            android:layout_width="83dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:ems="10"
+                            android:id="@+id/editTextDate"/>
                 </LinearLayout>
                 <LinearLayout
-                        android:orientation="horizontal"
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" android:layout_weight="1"
-                        android:id="@+id/ll_blesse_ligne2">
+                        android:layout_height="158dp" tools:layout_editor_absoluteY="123dp"
+                        tools:layout_editor_absoluteX="52dp"
+                        android:id="@+id/ll_lieu" android:background="@drawable/ll_rectangle_bords_droits">
+                    <TextView
+                            android:text="@string/lieu"
+                            android:layout_width="75dp"
+                            android:layout_height="54dp" android:id="@+id/tv_lieu" android:layout_weight="1"/>
                     <LinearLayout
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_cycliste_blesse">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btnll_cycliste_blesse"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tvll_cycliste_blesse"
-                                android:layout_weight="1"/>
+                            android:layout_height="86dp" android:layout_weight="1" android:id="@+id/ll_lieu1">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:layout_weight="1"
+                                android:id="@+id/ll_vie_prive">
+                            <Button
+                                    android:text="Button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:id="@+id/btn_vie_prive"
+                                    android:layout_weight="1"/>
+                            <TextView
+                                    android:text="@string/vie_privee"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:id="@+id/lv_vie_prive"
+                                    android:layout_weight="1" android:gravity="center_horizontal"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:layout_weight="1"
+                                android:id="@+id/ll_travail">
+                            <Button
+                                    android:text="Button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:id="@+id/btn_travail"
+                                    android:layout_weight="1"/>
+                            <TextView
+                                    android:text="@string/travail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:id="@+id/textView"
+                                    android:layout_weight="1" android:gravity="center_horizontal"/>
+                        </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_bus_blesse">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_bus_blesse"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_bus_blesse"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_train_blesse">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_train_blesse"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_train_blesse"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" android:layout_weight="1"
-                        android:id="@+id/ll_blesse_ligne3">
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_moto_blesse">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_moto_blesse"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_moto_blesse"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_poids_lourd_blesse">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_poids_lourd_blesse"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_poids_lourd_blesse"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_autre_blesse">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_autre_blesse"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_autre_blesse"
-                                android:layout_weight="1"/>
+                            android:layout_height="95dp" android:layout_weight="1" android:id="@+id/ll_lieu_2">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:layout_weight="1"
+                                android:id="@+id/ll_voie_public">
+                            <Button
+                                    android:text="Button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:id="@+id/btn_voie_public"
+                                    android:layout_weight="1"/>
+                            <TextView
+                                    android:text="@string/voie_public"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:id="@+id/lv_voie_public"
+                                    android:layout_weight="1" android:gravity="center_horizontal"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:layout_weight="1"
+                                android:id="@+id/ll_sport">
+                            <Button
+                                    android:text="Button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:id="@+id/btn_sport"
+                                    android:layout_weight="1"/>
+                            <TextView
+                                    android:text="@string/sport"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:id="@+id/lv_sport"
+                                    android:layout_weight="1" android:gravity="center_horizontal"/>
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
                     android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/ll_contre">
+                    android:layout_width="399dp"
+                    android:layout_height="223dp" tools:layout_editor_absoluteY="46dp"
+                    tools:layout_editor_absoluteX="495dp"
+                    android:id="@+id/ll_type"
+                    android:background="@drawable/ll_rectangle_bord_haut_droit_rond">
+                <TextView
+                        android:text="@string/type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/tv_type" android:layout_weight="1"/>
+                <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/spn_type" android:layout_weight="1"/>
+                <TextView
+                        android:text="@string/precision"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/tv_precision" android:layout_weight="1"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/et_precision" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="314dp" android:id="@+id/ll_global_ligne2">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="717dp"
+                    android:layout_height="213dp" tools:layout_editor_absoluteY="327dp"
+                    tools:layout_editor_absoluteX="29dp" android:id="@+id/ll_accident"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/ll_rectangle_bords_droits">
+                <TextView
+                        android:text="@string/Si_accident_voie_pulique"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/tv_si_inccident"/>
                 <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" android:layout_weight="1"
-                        android:id="@+id/ll_contre_ligne1">
-                    <LinearLayout
-                            android:orientation="horizontal"
+                        android:layout_height="29dp" android:id="@+id/ll_titre_accident">
+                    <TextView
+                            android:text="@string/Si_conducteur_blesse"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_mur_contre">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_mur_contre"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_mur_contre"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                    <LinearLayout
-                            android:orientation="horizontal"
+                            android:layout_height="wrap_content" android:id="@+id/lv_blesse" android:layout_weight="1"/>
+                    <TextView
+                            android:text="@string/contre"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_auto_contre">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_auto_contre"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_auto_contre"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_vehicule_agricole_contre">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_vehicule_agricole_contre"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_vehicule_agricole_contre"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
+                            android:layout_height="wrap_content" android:id="@+id/lv_contre" android:layout_weight="1"/>
                 </LinearLayout>
                 <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" android:layout_weight="1"
-                        android:id="@+id/ll_contre_ligne2">
+                        android:layout_height="72dp" android:layout_weight="1" android:id="@+id/ll_accident_bouton">
                     <LinearLayout
-                            android:orientation="horizontal"
+                            android:orientation="vertical"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_arbre_contre">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_arbre_contre"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_arbre_contre"
-                                android:layout_weight="1"/>
+                            android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/ll_blesse">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:layout_weight="1"
+                                android:id="@+id/ll_blesse_ligne1">
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_pieton_blesse">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btnll_pieton_blesse"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/pieton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_pieton_blesse"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_auto_contre_blesse">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_auto_blesse"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/auto"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_auto_blesse"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_vehi_agricole_blesse">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_vehi_agricole_blesse"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/vehicule_agricole"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_vehi_agricole_blesse"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:layout_weight="1"
+                                android:id="@+id/ll_blesse_ligne2">
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_cycliste_blesse">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btnll_cycliste_blesse"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/cycliste"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tvll_cycliste_blesse"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_bus_blesse">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_bus_blesse"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/bus"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_bus_blesse"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_train_blesse">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_train_blesse"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/train"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_train_blesse"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:layout_weight="1"
+                                android:id="@+id/ll_blesse_ligne3">
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_moto_blesse">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_moto_blesse"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/moto"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_moto_blesse"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_poids_lourd_blesse">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_poids_lourd_blesse"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/Poids_lourd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_poids_lourd_blesse"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_autre_blesse">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_autre_blesse"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/autre"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_autre_blesse"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                        </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
-                            android:orientation="horizontal"
+                            android:orientation="vertical"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_bus_contre">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_bus_contre"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_bus_contre"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_cycliste_contre">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_cycliste_contre"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_cycliste_contre"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" android:layout_weight="1"
-                        android:id="@+id/ll_contre_ligne3">
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_moto_contre">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_moto_contre"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_moto_contre"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_poids_lourd_contre">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_poids_lourd_contre"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_poids_lourd_contre"
-                                android:layout_weight="1"/>
-                    </LinearLayout>
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" android:layout_weight="1"
-                            android:id="@+id/ll_train_contre">
-                        <Button
-                                android:text="Button"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/btn_train_contre"
-                                android:layout_weight="1"/>
-                        <TextView
-                                android:text="TextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" android:id="@+id/tv_train_contre"
-                                android:layout_weight="1"/>
+                            android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/ll_contre">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:layout_weight="1"
+                                android:id="@+id/ll_contre_ligne1">
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_mur_contre">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_mur_contre"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/mur"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_mur_contre"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_auto_contre">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_auto_contre"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/auto"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_auto_contre"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_vehicule_agricole_contre">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/btn_vehicule_agricole_contre"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/vehicule_agricole"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tv_vehicule_agricole_contre"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:layout_weight="1"
+                                android:id="@+id/ll_contre_ligne2">
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_arbre_contre">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_arbre_contre"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/arbre"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_arbre_contre"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_bus_contre">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_bus_contre"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/bus"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_bus_contre"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_cycliste_contre">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_cycliste_contre"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/cycliste"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_cycliste_contre"
+                                        android:layout_weight="1"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:layout_weight="1"
+                                android:id="@+id/ll_contre_ligne3">
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_moto_contre">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_moto_contre"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/moto"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_moto_contre"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_poids_lourd_contre">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_poids_lourd_contre"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/Poids_lourd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_poids_lourd_contre"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" android:layout_weight="1"
+                                    android:id="@+id/ll_train_contre">
+                                <Button
+                                        android:text="Button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/btn_train_contre"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:text="@string/train"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" android:id="@+id/tv_train_contre"
+                                        android:layout_weight="1" android:gravity="center_horizontal"/>
+                            </LinearLayout>
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="168dp"
+                    android:layout_height="195dp" tools:layout_editor_absoluteY="314dp"
+                    tools:layout_editor_absoluteX="668dp"
+                    android:id="@+id/ll_conducteur" android:background="@drawable/ll_rectangle_bords_droits">
+                <TextView
+                        android:text="@string/Si_conducteur_blesse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/tv_conducteur"/>
+                <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/rg_conducteur">
+                    <RadioButton
+                            android:text="@string/hors_vehicule"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/rb_hors_vehicule_conducteur"/>
+                    <RadioButton
+                            android:text="@string/dans_vehicule"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/rb_dans_vehicule_conducteur"/>
+                </RadioGroup>
+                <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/spn_conducteur"
+                        android:layout_weight="1"/>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="189dp"
-            android:layout_height="195dp" tools:layout_editor_absoluteY="314dp" tools:layout_editor_absoluteX="668dp"
-            android:id="@+id/ll_conducteur">
-        <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tv_conducteur"/>
-        <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/rg_conducteur">
-            <RadioButton
-                    android:text="RadioButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/rb_hors_vehicule_conducteur"/>
-            <RadioButton
-                    android:text="RadioButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/rb_dans_vehicule_conducteur"/>
-        </RadioGroup>
-        <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/spn_conducteur" android:layout_weight="1"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
