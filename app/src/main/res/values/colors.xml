@@ -3,7 +3,21 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="SombreBleu">#2b2d42</color>
-    <color name="RougeVif">#d90429</color>
-    <color name="GrisClair">#DBDBDB</color>
+
+    <color name="sombreBleu">#2b2d42</color>
+
+    <color name="rougeVif">#d90429</color>
+
+
+
+    <color name="rougeClair">#EF233C</color>
+    <color name="rougeClairPale">#E6ABB4</color>
+
+    <color name="grisClair">#DBDBDB</color>
+    <color name="grisFond">#E2E6E8</color>
+    <color name="grisFonceFond">#D4D5D6</color>
+    <color name="gris">#EBEEEF</color>
+    <color name="grisFonce">#9EA1A2</color>
+    <color name="grisTrait">#C2C6C7</color>
+
 </resources>

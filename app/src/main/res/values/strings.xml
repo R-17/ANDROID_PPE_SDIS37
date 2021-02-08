@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Fiche bilan des interventions</string>
+    <string name="oui">oui</string>
+    <string name="non">non</string>
+
+    <string name="conscience">Conscience</string>
+    <string name="parole">Parole</string>
+    <string name="desoriente">Désorienté</string>
+    <string name="somnolence">Somnolence</string>
+    <string name="agitation">Somnolence</string>
+    <string name="pci">PCI</string>
+
+
+    <string name="reaction">Réaction</string>
+    <string name="ouvrir_yeux">Ouvre les yeux</string>
+    <string name="pupilles">Pupilles symétriques</string>
+    <string name="bouge_jambes">Bouge les jambes</string>
+    <string name="bouge_bras">Bouge les bras</string>
+    <string name="seul">seul</string>
+    <string name="ordre">ordre</string>
+
+    <string name="sensibilite">Sensibilité</string>
 </resources>
