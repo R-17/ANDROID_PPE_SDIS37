@@ -18,9 +18,9 @@
 
     <string name="reaction">Réaction</string>
     <string name="ouvrir_yeux">Ouvre les yeux</string>
-    <string name="pupilles">Pupilles symétriques</string>
-    <string name="bouge_jambes">Bouge les jambes</string>
-    <string name="bouge_bras">Bouge les bras</string>
+    <string name="pupilles">Pupilles\nsymétriques</string>
+    <string name="bouge_jambes">Bouge\nles jambes</string>
+    <string name="bouge_bras">Bouge\nles bras</string>
     <string name="seul">seul</string>
     <string name="ordre">ordre</string>
 

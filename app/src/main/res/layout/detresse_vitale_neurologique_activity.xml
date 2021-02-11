@@ -330,7 +330,7 @@
             <RelativeLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="90dp"
                     android:id="@+id/rl_pupilles"
                     style="@style/rl_marge">
                 <TextView
@@ -403,7 +403,7 @@
                     style="@style/rl_marge">
                 <TextView
                         android:id="@+id/tv_bouge_mains"
-                        android:text="@string/ouvrir_yeux"
+                        android:text="@string/bouge_bras"
                         style="@style/tv_libelle_haut"/>
                 <TextView
                         android:id="@+id/tv_bouge_mains_seul"
