@@ -104,17 +104,164 @@
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="136dp">
+                android:layout_height="130dp">
             <LinearLayout
                     android:orientation="vertical"
-                    android:layout_width="450dp"
+                    android:layout_width="390dp"
                     android:layout_height="match_parent">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:id="@+id/rl_medicalisee"
+                        android:orientation="horizontal"
+                        style="@style/rl_marge">
+                    <TextView
+                            android:id="@+id/tv_medicalisee"
+                            android:text="@string/medicalisee"
+                            style="@style/tv_libelle_centre"/>
+                    <Button
+                            android:text="@string/oui"
+                            android:id="@+id/btn_medicalisee_oui"
+                            android:background="@drawable/btn_indice_non_gravite"
+                            android:layout_toStartOf="@+id/btn_medicalisee_non"
+                            style="@style/btn_indice_non_gravite_centre_gauche"/>
+                    <Button
+                            android:text="@string/non"
+                            android:id="@+id/btn_medicalisee_non"
+                            android:background="@drawable/btn_indice_gravite"
+                            style="@style/btn_indice_gravite_centre_droite"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:id="@+id/rl_intubation"
+                        android:orientation="horizontal"
+                        style="@style/rl_marge">
+                    <TextView
+                            android:id="@+id/tv_intubation"
+                            android:text="@string/intubation"
+                            style="@style/tv_libelle_centre"/>
+                    <View
+                            android:id="@+id/v_intubation"
+                            style="@style/v_trait"
+                            android:layout_toStartOf="@+id/btn_intubation_oui"
+                            android:layout_toEndOf="@+id/tv_intubation"/>
+                    <Button
+                            android:text="@string/oui"
+                            android:id="@+id/btn_intubation_oui"
+                            android:background="@drawable/btn_indice_non_gravite"
+                            android:layout_toStartOf="@+id/btn_intubation_non"
+                            style="@style/btn_indice_non_gravite_centre_gauche"/>
+                    <Button
+                            android:text="@string/non"
+                            android:id="@+id/btn_intubation_non"
+                            android:background="@drawable/btn_indice_gravite"
+                            style="@style/btn_indice_gravite_centre_droite"/>
+                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:id="@+id/rl_avec"
+                        android:orientation="horizontal"
+                        style="@style/rl_marge">
+                    <TextView
+                            android:id="@+id/tv_avec"
+                            android:text="@string/avec"
+                            style="@style/tv_libelle_centre"/>
+                        <CheckBox
+                                android:text="@string/sssm"
+                                android:id="@+id/cb_sssm"
+                                android:layout_toEndOf="@+id/tv_avec"
+                                style="@style/cb_normal"/>
+                        <CheckBox
+                                android:text="@string/smur"
+                                android:id="@+id/cb_smur"
+                                android:layout_toEndOf="@+id/cb_sssm"
+                                style="@style/cb_normal"/>
+                        <CheckBox
+                                android:text="@string/medecin_traitant"
+                                android:id="@+id/cb_medecin_traitant"
+                                android:layout_toEndOf="@+id/cb_smur"
+                                style="@style/cb_normal"/>
+                        <CheckBox
+                                android:text="@string/autre"
+                                android:id="@+id/cb_autre_medicalisee"
+                                android:layout_toEndOf="@+id/cb_medecin_traitant"
+                                style="@style/cb_normal"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:id="@+id/rl_perfusion"
+                        android:orientation="horizontal"
+                        style="@style/rl_marge">
+                    <TextView
+                            android:id="@+id/tv_perfusion"
+                            android:text="@string/perfusion"
+                            style="@style/tv_libelle_centre"/>
+                    <Button
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/oui"
+                            android:id="@+id/btn_perfusion_oui"
+                            android:background="@drawable/btn_indice_non_gravite"
+                            android:layout_toEndOf="@+id/tv_perfusion"
+                            style="@style/btn_indice_non_gravite_centre_gauche"/>
+                    <Button
+                            android:text="@string/non"
+                            android:id="@+id/btn_perfusion_non"
+                            android:layout_toEndOf="@+id/btn_perfusion_oui"
+                            android:background="@drawable/btn_indice_gravite"
+                            android:layout_alignParentRight="false"
+                            style="@style/btn_indice_gravite_centre_droite"/>
+                    <EditText
+                            android:layout_toEndOf="@+id/btn_perfusion_non"
+                            android:inputType="time"
+                            android:ems="10"
+                            android:id="@+id/et_glasgow"
+                            style="@style/et_normal"/>
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:id="@+id/rl_evolution"
+                android:orientation="horizontal"
+                style="@style/rl_marge">
+            <TextView
+                    android:id="@+id/tv_evolution"
+                    android:text="@string/evolution"
+                    style="@style/tv_libelle_centre"/>
+                <CheckBox
+                        android:text="@string/aggravation"
+                        android:id="@+id/cb_aggravation"
+                        android:layout_toEndOf="@+id/tv_evolution"
+                        style="@style/cb_normal"/>
+                <CheckBox
+                        android:text="@string/stationnaire"
+                        android:id="@+id/cb_stationnaire"
+                        android:layout_toEndOf="@+id/cb_aggravation"
+                        style="@style/cb_normal"/>
+                <CheckBox
+                        android:text="@string/amelioration"
+                        android:id="@+id/cb_amelioration"
+                        android:layout_toEndOf="@+id/cb_stationnaire"
+                        style="@style/cb_normal"/>
+                <CheckBox
+                        android:text="@string/refus_transport"
+                        android:id="@+id/cb_refus_transport"
+                        android:layout_toEndOf="@+id/cb_amelioration"
+                        style="@style/cb_normal"/>
+                <CheckBox
+                        android:text="@string/deces"
+                        android:id="@+id/deces"
+                        android:layout_toEndOf="@+id/cb_refus_transport"
+                        style="@style/cb_normal"/>
+        </RelativeLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -64,12 +64,12 @@
     <string name="ambulance_privee">Ambulance privée</string>
     <string name="helicoptere">Hélicoptère</string>
     <string name="autre">Autre</string>
-    <string name="medicalisee">Médicalisée :</string>
+    <string name="medicalisee">Médicalisée</string>
     <string name="avec">Avec</string>
     <string name="sssm">SSSM</string>
     <string name="smur">SMUR</string>
     <string name="medecin_traitant">Médecin traitant</string>
-    <string name="intubation">Intubation :</string>
+    <string name="intubation">Intubation</string>
     <string name="glasgow">Glasgow</string>
     <string name="perfusion">Perfusion</string>
     <string name="evolution">Évolution :</string>
