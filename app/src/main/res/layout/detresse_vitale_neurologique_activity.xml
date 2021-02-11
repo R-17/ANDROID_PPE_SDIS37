@@ -21,183 +21,421 @@
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="fill_parent"
-                    android:layout_height="380dp" android:background="@drawable/ll_rectangle_bord_haut_gauche_rond"
+                    android:layout_height="380dp"
+                    android:background="@drawable/ll_rectangle_bord_haut_gauche_rond"
                     android:id="@+id/ll_conscience">
                 <TextView
                         android:text="@string/conscience"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/txt_conscience" style="@style/txt_titre"
-                        android:gravity="center" android:layout_gravity="center"
-                        android:background="@drawable/txt_rectangle_bord_haut_gauche_rond" android:textSize="24sp"/>
-                <LinearLayout
+                        android:id="@+id/txt_conscience"
+                        style="@style/tv_titre"
+                        android:background="@drawable/txt_rectangle_bord_haut_gauche_rond"/>
+                <RelativeLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="41dp" android:id="@+id/ll_parole" android:layout_marginTop="10dp">
+                        android:layout_height="45dp"
+                        android:id="@+id/rl_parole"
+                        style="@style/rl_marge">
                     <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/txt_parole"
-                            android:text="@string/parole" style="@style/txt_libelle"
-                            android:layout_weight="1" android:layout_marginLeft="20dp"/>
+                            android:id="@+id/tv_parole"
+                            android:text="@string/parole"
+                            style="@style/tv_libelle_centre"/>
                     <View
                             android:id="@+id/v_parole"
-                            android:background="@color/grisTrait" android:layout_width="80dp"
-                            android:layout_height="1dp"
-                            android:layout_weight="1" android:layout_marginRight="10dp"
-                            android:layout_gravity="bottom"/>
+                            style="@style/v_trait"
+                            android:layout_toStartOf="@+id/btn_parole_oui"
+                            android:layout_toEndOf="@+id/tv_parole"/>
                     <Button
                             android:text="@string/oui"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content" android:id="@+id/btn_parole_oui"
-                            style="@style/txt_bouton" android:background="@drawable/btn_indice_non_gravite"
-                            android:layout_marginRight="10dp"/>
+                            android:id="@+id/btn_parole_oui"
+                            android:background="@drawable/btn_indice_non_gravite"
+                            android:layout_toStartOf="@+id/btn_parole_non"
+                            style="@style/btn_indice_non_gravite_centre_gauche"/>
                     <Button
                             android:text="@string/non"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content" android:id="@+id/btn_parole_non"
-                            style="@style/txt_bouton" android:background="@drawable/btn_indice_gravite"
-                            android:layout_marginRight="20dp"
-                    />
-                </LinearLayout>
-                <LinearLayout
+                            android:id="@+id/btn_parole_non"
+                            android:background="@drawable/btn_indice_gravite"
+                            style="@style/btn_indice_gravite_centre_droite"/>
+                </RelativeLayout>
+                <RelativeLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="31dp" android:id="@+id/ll_desoriente">
+                        android:layout_height="45dp"
+                        android:id="@+id/rl_desoriente"
+                        style="@style/rl_marge">
                     <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/txt_desoriente"
-                            android:text="@string/desoriente" style="@style/txt_libelle"
-                            android:layout_weight="1" android:layout_marginLeft="20dp"/>
+                            android:id="@+id/tv_desoriente"
+                            android:text="@string/desoriente"
+                            style="@style/tv_libelle_centre"/>
                     <View
                             android:id="@+id/v_desoriente"
-                            android:background="@color/grisTrait" android:layout_width="25dp"
-                            android:layout_height="1dp"
-                            android:layout_marginRight="10dp" android:layout_gravity="bottom"/>
+                            style="@style/v_trait"
+                            android:layout_toStartOf="@+id/btn_desoriente_oui"
+                            android:layout_toEndOf="@+id/tv_desoriente"/>
                     <Button
                             android:text="@string/oui"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content" android:id="@+id/btn_desoriente_oui"
-                            style="@style/txt_bouton" android:background="@drawable/btn_indice_non_gravite"
-                            android:layout_marginRight="10dp" android:layout_weight="1"/>
+                            android:id="@+id/btn_desoriente_oui"
+                            android:background="@drawable/btn_indice_non_gravite"
+                            android:layout_toStartOf="@+id/btn_desoriente_non"
+                            style="@style/btn_indice_non_gravite_centre_gauche"/>
                     <Button
                             android:text="@string/non"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content" android:id="@+id/btn_desoriente_non"
-                            style="@style/txt_bouton" android:background="@drawable/btn_indice_gravite"
-                            android:layout_marginRight="20dp"
-                            android:layout_weight="1"/>
-                </LinearLayout>
-                <LinearLayout
+                            android:id="@+id/btn_desoriente_non"
+                            android:background="@drawable/btn_indice_gravite"
+                            style="@style/btn_indice_gravite_centre_droite"/>
+                </RelativeLayout>
+                <RelativeLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="41dp" android:id="@+id/ll_somnolence">
+                        android:layout_height="45dp"
+                        android:id="@+id/rl_somnolence"
+                        style="@style/rl_marge">
                     <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/txt_parole3"
-                            android:text="@string/parole" style="@style/txt_libelle"
-                            android:layout_weight="1" android:layout_marginLeft="20dp"/>
+                            android:id="@+id/tv_somnolence"
+                            android:text="@string/somnolence"
+                            style="@style/tv_libelle_centre"/>
                     <View
-                            android:id="@+id/v_parole3"
-                            android:background="@color/grisTrait" android:layout_width="80dp"
-                            android:layout_height="1dp"
-                            android:layout_weight="1" android:layout_marginRight="10dp"
-                            android:layout_gravity="bottom"/>
+                            android:id="@+id/v_somnolence"
+                            style="@style/v_trait"
+                            android:layout_toStartOf="@+id/btn_somnolence_oui"
+                            android:layout_toEndOf="@+id/tv_somnolence"/>
                     <Button
                             android:text="@string/oui"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content" android:id="@+id/btn_parole_oui3"
-                            style="@style/txt_bouton" android:background="@drawable/btn_indice_non_gravite"
-                            android:layout_marginRight="10dp" android:layout_weight="1"/>
+                            android:id="@+id/btn_somnolence_oui"
+                            android:background="@drawable/btn_indice_non_gravite"
+                            android:layout_toStartOf="@+id/btn_somnolence_non"
+                            style="@style/btn_indice_non_gravite_centre_gauche"/>
                     <Button
                             android:text="@string/non"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content" android:id="@+id/btn_parole_non3"
-                            style="@style/txt_bouton" android:background="@drawable/btn_indice_gravite"
-                            android:layout_marginRight="20dp"
-                            android:layout_weight="1"/>
-                </LinearLayout>
-                <LinearLayout
+                            android:id="@+id/btn_somnolence_non"
+                            android:background="@drawable/btn_indice_gravite"
+                            style="@style/btn_indice_gravite_centre_droite"/>
+                </RelativeLayout>
+                <RelativeLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="55dp" android:id="@+id/ll_agitation">
+                        android:layout_height="45dp"
+                        android:id="@+id/rl_agitation"
+                        style="@style/rl_marge">
                     <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/txt_parole4"
-                            android:text="@string/parole" style="@style/txt_libelle"
-                            android:layout_weight="1" android:layout_marginLeft="20dp"/>
+                            android:id="@+id/tv_agitation"
+                            android:text="@string/agitation"
+                            style="@style/tv_libelle_centre"/>
                     <View
-                            android:id="@+id/v_parole4"
-                            android:background="@color/grisTrait" android:layout_width="80dp"
-                            android:layout_height="1dp"
-                            android:layout_weight="1" android:layout_marginRight="10dp"
-                            android:layout_gravity="bottom"/>
+                            android:id="@+id/v_agitation"
+                            style="@style/v_trait"
+                            android:layout_toStartOf="@+id/btn_agitation_oui"
+                            android:layout_toEndOf="@+id/tv_agitation"/>
                     <Button
                             android:text="@string/oui"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content" android:id="@+id/btn_parole_oui4"
-                            style="@style/txt_bouton" android:background="@drawable/btn_indice_non_gravite"
-                            android:layout_marginRight="10dp" android:layout_weight="1"/>
+                            android:id="@+id/btn_agitation_oui"
+                            android:background="@drawable/btn_indice_non_gravite"
+                            android:layout_toStartOf="@+id/btn_agitation_non"
+                            style="@style/btn_indice_non_gravite_centre_gauche"/>
                     <Button
                             android:text="@string/non"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content" android:id="@+id/btn_parole_non4"
-                            style="@style/txt_bouton" android:background="@drawable/btn_indice_gravite"
-                            android:layout_marginRight="20dp"
-                            android:layout_weight="1"/>
-                </LinearLayout>
-                <LinearLayout
+                            android:id="@+id/btn_agitation_non"
+                            android:background="@drawable/btn_indice_gravite"
+                            style="@style/btn_indice_gravite_centre_droite"/>
+                </RelativeLayout>
+                <RelativeLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="62dp" android:id="@+id/ll_pci">
+                        android:layout_height="45dp"
+                        android:id="@+id/rl_pci"
+                        style="@style/rl_marge">
                     <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/txt_parole5"
-                            android:text="@string/parole" style="@style/txt_libelle"
-                            android:layout_weight="1" android:layout_marginLeft="20dp"/>
+                            android:id="@+id/tv_pci"
+                            android:text="@string/pci"
+                            style="@style/tv_libelle_centre"/>
                     <View
-                            android:id="@+id/v_parole5"
-                            android:background="@color/grisTrait" android:layout_width="80dp"
-                            android:layout_height="1dp"
-                            android:layout_weight="1" android:layout_marginRight="10dp"
-                            android:layout_gravity="bottom"/>
+                            android:id="@+id/v_pci"
+                            style="@style/v_trait"
+                            android:layout_toStartOf="@+id/btn_pci_oui"
+                            android:layout_toEndOf="@+id/tv_pci"/>
                     <Button
                             android:text="@string/oui"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content" android:id="@+id/btn_parole_oui5"
-                            style="@style/txt_bouton" android:background="@drawable/btn_indice_non_gravite"
-                            android:layout_marginRight="10dp" android:layout_weight="1"/>
+                            android:id="@+id/btn_pci_oui"
+                            android:background="@drawable/btn_indice_non_gravite"
+                            android:layout_toStartOf="@+id/btn_pci_non"
+                            style="@style/btn_indice_non_gravite_centre_gauche"/>
                     <Button
                             android:text="@string/non"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content" android:id="@+id/btn_parole_non5"
-                            style="@style/txt_bouton" android:background="@drawable/btn_indice_gravite"
-                            android:layout_marginRight="20dp"
-                            android:layout_weight="1"/>
-                </LinearLayout>
+                            android:id="@+id/btn_pci_non"
+                            android:background="@drawable/btn_indice_gravite"
+                            style="@style/btn_indice_gravite_centre_droite"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/rl_si_pci">
+                    <TextView
+                            android:text="@string/si_pci"
+                            android:id="@+id/tv_si_pci"
+                            style="@style/tv_condition"/>
+                    <View
+                            android:id="@+id/v_si_pci"
+                            style="@style/v_condition"
+                            android:layout_toEndOf="@+id/tv_si_pci"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/rl_duree">
+                    <TextView
+                            android:id="@+id/tv_duree"
+                            android:text="@string/duree"
+                            style="@style/tv_libelle_centre"/>
+                    <EditText
+                            android:layout_toEndOf="@+id/tv_duree"
+                            android:inputType="time"
+                            android:ems="10"
+                            android:id="@+id/et_duree"
+                            style="@style/et_normal"/>
+                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="fill_parent"
-                    android:layout_height="match_parent" android:background="@drawable/ll_rectangle_bords_droits"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ll_rectangle_bords_droits"
                     android:id="@+id/ll_sensibilite">
                 <TextView
                         android:text="@string/sensibilite"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/txt_sensibilite" style="@style/txt_titre"
-                        android:gravity="center" android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_sensibilite"
+                        style="@style/tv_titre"
+                        android:gravity="center"
+                        android:layout_gravity="center"
                         android:background="@drawable/txt_rectangle_bords_droits"/>
+                <TextView
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_pincement"
+                        android:text="@string/pincement"
+                        style="@style/tv_sous_titre"/>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/rl_mains"
+                        style="@style/rl_marge">
+                    <TextView
+                            android:id="@+id/tv_mains"
+                            android:text="@string/sensibilite_main"
+                            style="@style/tv_libelle_centre"/>
+                    <View
+                            android:id="@+id/v_mains"
+                            style="@style/v_trait"
+                            android:layout_toStartOf="@+id/btn_mains_oui"
+                            android:layout_toEndOf="@+id/tv_mains"/>
+                    <Button
+                            android:text="@string/oui"
+                            android:id="@+id/btn_mains_oui"
+                            android:background="@drawable/btn_indice_non_gravite"
+                            android:layout_toStartOf="@+id/btn_mains_non"
+                            style="@style/btn_indice_non_gravite_centre_gauche"/>
+                    <Button
+                            android:text="@string/non"
+                            android:id="@+id/btn_mains_non"
+                            android:background="@drawable/btn_indice_gravite"
+                            style="@style/btn_indice_gravite_centre_droite"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/rl_jambes"
+                        style="@style/rl_marge">
+                    <TextView
+                            android:id="@+id/tv_jambes"
+                            android:text="@string/sensibilite_jambes"
+                            style="@style/tv_libelle_centre"/>
+                    <View
+                            android:id="@+id/v_jambes"
+                            style="@style/v_trait"
+                            android:layout_toStartOf="@+id/btn_jambes_oui"
+                            android:layout_toEndOf="@+id/tv_jambes"/>
+                    <Button
+                            android:text="@string/oui"
+                            android:id="@+id/btn_jambes_oui"
+                            android:background="@drawable/btn_indice_non_gravite"
+                            android:layout_toStartOf="@+id/btn_jambes_non"
+                            style="@style/btn_indice_non_gravite_centre_gauche"/>
+                    <Button
+                            android:text="@string/non"
+                            android:id="@+id/btn_jambes_non"
+                            android:background="@drawable/btn_indice_gravite"
+                            style="@style/btn_indice_gravite_centre_droite"/>
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" android:id="@+id/ll_reaction"
+                android:layout_height="fill_parent"
+                android:id="@+id/ll_reaction"
                 android:background="@drawable/ll_rectangle_bord_haut_droit_rond">
             <TextView
                     android:text="@string/reaction"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/txt_reaction" style="@style/txt_titre"
-                    android:background="@drawable/txt_rectangle_bord_haut_droit_rond" android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_reaction"
+                    style="@style/tv_titre"
+                    android:background="@drawable/txt_rectangle_bord_haut_droit_rond"
+                    android:gravity="center"
                     android:layout_gravity="center"/>
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/rl_yeux"
+                    style="@style/rl_marge">
+                <TextView
+                        android:id="@+id/tv_yeux"
+                        android:text="@string/ouvrir_yeux"
+                        style="@style/tv_libelle_haut"/>
+                <TextView
+                        android:id="@+id/tv_yeux_seul"
+                        android:text="@string/seul"
+                        style="@style/tv_libelle_precision_haut"/>
+                <Button
+                        android:text="@string/oui"
+                        android:id="@+id/btn_yeux_seul_oui"
+                        android:background="@drawable/btn_indice_non_gravite"
+                        android:layout_toStartOf="@+id/btn_yeux_seul_non"
+                        style="@style/btn_indice_non_gravite_haut_gauche"/>
+                <Button
+                        android:text="@string/non"
+                        android:id="@+id/btn_yeux_seul_non"
+                        android:background="@drawable/btn_indice_gravite"
+                        style="@style/btn_indice_gravite_haut_droite"/>
+                <TextView
+                        android:id="@+id/tv_yeux_ordre"
+                        android:text="@string/ordre"
+                        style="@style/tv_libelle_precision_centre"/>
+                <Button
+                        android:text="@string/oui"
+                        android:id="@+id/btn_yeux_ordre_oui"
+                        android:background="@drawable/btn_indice_non_gravite"
+                        android:layout_toStartOf="@+id/btn_yeux_ordre_non"
+                        style="@style/btn_indice_non_gravite_centre_gauche"/>
+                <Button
+                        android:text="@string/non"
+                        android:id="@+id/btn_yeux_ordre_non"
+                        android:background="@drawable/btn_indice_gravite"
+                        style="@style/btn_indice_gravite_centre_droite"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/rl_pupilles"
+                    style="@style/rl_marge">
+                <TextView
+                        android:id="@+id/tv_pupilles"
+                        android:text="@string/pupilles"
+                        style="@style/tv_libelle_centre"/>
+                <View
+                        android:id="@+id/v_pupilles"
+                        style="@style/v_trait"
+                        android:layout_toStartOf="@+id/btn_pupilles_oui"
+                        android:layout_toEndOf="@+id/tv_pupilles"/>
+                <Button
+                        android:text="@string/oui"
+                        android:id="@+id/btn_pupilles_oui"
+                        android:background="@drawable/btn_indice_non_gravite"
+                        android:layout_toStartOf="@+id/btn_pupilles_non"
+                        style="@style/btn_indice_non_gravite_centre_gauche"/>
+                <Button
+                        android:text="@string/non"
+                        android:id="@+id/btn_pupilles_non"
+                        android:background="@drawable/btn_indice_gravite"
+                        style="@style/btn_indice_gravite_centre_droite"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/rl_bouge_jambes"
+                    style="@style/rl_marge">
+                <TextView
+                        android:id="@+id/tv_bouge_jambes"
+                        android:text="@string/bouge_jambes"
+                        style="@style/tv_libelle_haut"/>
+                <TextView
+                        android:id="@+id/tv_bouge_jambes_seul"
+                        android:text="@string/seul"
+                        style="@style/tv_libelle_precision_haut"/>
+                <Button
+                        android:text="@string/oui"
+                        android:id="@+id/btn_bouge_jambes_seul_oui"
+                        android:background="@drawable/btn_indice_non_gravite"
+                        android:layout_toStartOf="@+id/btn_bouge_jambes_seul_non"
+                        style="@style/btn_indice_non_gravite_haut_gauche"/>
+                <Button
+                        android:text="@string/non"
+                        android:id="@+id/btn_bouge_jambes_seul_non"
+                        android:background="@drawable/btn_indice_gravite"
+                        style="@style/btn_indice_gravite_haut_droite"/>
+                <TextView
+                        android:id="@+id/tv_bouge_jambes_ordre"
+                        android:text="@string/ordre"
+                        style="@style/tv_libelle_precision_centre"/>
+                <Button
+                        android:text="@string/oui"
+                        android:id="@+id/btn_bouge_jambes_ordre_oui"
+                        android:background="@drawable/btn_indice_non_gravite"
+                        android:layout_toStartOf="@+id/btn_bouge_jambes_ordre_non"
+                        style="@style/btn_indice_non_gravite_centre_gauche"/>
+                <Button
+                        android:text="@string/non"
+                        android:id="@+id/btn_bouge_jambes_ordre_non"
+                        android:background="@drawable/btn_indice_gravite"
+                        style="@style/btn_indice_gravite_centre_droite"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/rl_bouge_mains"
+                    style="@style/rl_marge">
+                <TextView
+                        android:id="@+id/tv_bouge_mains"
+                        android:text="@string/ouvrir_yeux"
+                        style="@style/tv_libelle_haut"/>
+                <TextView
+                        android:id="@+id/tv_bouge_mains_seul"
+                        android:text="@string/seul"
+                        style="@style/tv_libelle_precision_haut"/>
+                <Button
+                        android:text="@string/oui"
+                        android:id="@+id/btn_bouge_mains_seul_oui"
+                        android:background="@drawable/btn_indice_non_gravite"
+                        android:layout_toStartOf="@+id/btn_bouge_mains_seul_non"
+                        style="@style/btn_indice_non_gravite_haut_gauche"/>
+                <Button
+                        android:text="@string/non"
+                        android:id="@+id/btn_bouge_mains_seul_non"
+                        android:background="@drawable/btn_indice_gravite"
+                        style="@style/btn_indice_gravite_haut_droite"/>
+                <TextView
+                        android:id="@+id/tv_bouge_mains_ordre"
+                        android:text="@string/ordre"
+                        style="@style/tv_libelle_precision_centre"/>
+                <Button
+                        android:text="@string/oui"
+                        android:id="@+id/btn_bouge_mains_ordre_oui"
+                        android:background="@drawable/btn_indice_non_gravite"
+                        android:layout_toStartOf="@+id/btn_bouge_mains_ordre_non"
+                        style="@style/btn_indice_non_gravite_centre_gauche"/>
+                <Button
+                        android:text="@string/non"
+                        android:id="@+id/btn_bouge_mains_ordre_non"
+                        android:background="@drawable/btn_indice_gravite"
+                        style="@style/btn_indice_gravite_centre_droite"/>
+            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

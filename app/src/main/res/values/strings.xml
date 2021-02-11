@@ -3,12 +3,17 @@
     <string name="oui">oui</string>
     <string name="non">non</string>
 
+    <string name="hemorragie">Hémorragie</string>
+    <string name="ventilation">Ventilation</string>
+    <string name="pouls_carotidien">Pouls carotidien</string>
     <string name="conscience">Conscience</string>
     <string name="parole">Parole</string>
     <string name="desoriente">Désorienté</string>
     <string name="somnolence">Somnolence</string>
-    <string name="agitation">Somnolence</string>
+    <string name="agitation">Agitation</string>
     <string name="pci">PCI</string>
+    <string name="si_pci">Si PCI</string>
+    <string name="duree">Durée :</string>
 
 
     <string name="reaction">Réaction</string>
@@ -20,4 +25,9 @@
     <string name="ordre">ordre</string>
 
     <string name="sensibilite">Sensibilité</string>
+    <string name="pincement">Pincement perçu</string>
+    <string name="sensibilite_main">Dos des mains</string>
+    <string name="sensibilite_jambes">Jambes</string>
+
+    <string name="libelle_saisie">Taper ici pour écrire...</string>
 </resources>

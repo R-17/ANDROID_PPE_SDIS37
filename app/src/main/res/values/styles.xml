@@ -6,31 +6,204 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <!-- Bouton -->
+        <!-- Accueil -->
     <style name="btn_accueil" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="android:textColor">@color/sombreBleu</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/poppins</item>
     </style>
-    <style name="txt_libelle" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        <!-- Indice gravité -->
+            <!-- Centre -->
+                <!-- Emplacement à droite -->
+    <style name="btn_indice_gravite_centre_droite" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+    <style name="btn_indice_non_gravite_centre_droite" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+            <!-- Emplacement à gauche -->
+    <style name="btn_indice_gravite_centre_gauche" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="btn_indice_non_gravite_centre_gauche" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+            <!-- Haut -->
+                <!-- Emplacement à droite -->
+    <style name="btn_indice_gravite_haut_droite" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+    <style name="btn_indice_non_gravite_haut_droite" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+                <!-- Emplacement à gauche -->
+    <style name="btn_indice_gravite_haut_gauche" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="btn_indice_non_gravite_haut_gauche" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+
+
+    <!-- Texte -->
+    <style name="tv_libelle_centre" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
     </style>
-    <style name="txt_bouton" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="tv_libelle_haut" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
     </style>
-    <style name="txt_titre" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="tv_libelle_precision_centre" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="tv_libelle_precision_haut" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="tv_titre" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">26sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="tv_sous_titre" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">-5dp</item>
+    </style>
+    <style name="tv_condition" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/rougeClair</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <!-- Vue -->
+    <style name="v_trait" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/grisTrait</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+    <style name="v_condition" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/rougeClair</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <!-- Zone de saisie -->
+    <style name="et_normal" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:text">@string/libelle_saisie</item>
+        <item name="android:textColor">@color/grisFonce</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!-- RelativeLayout -->
+    <style name="rl_marge" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_marginTop">2dp</item>
     </style>
 </resources>
