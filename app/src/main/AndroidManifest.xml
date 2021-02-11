@@ -9,11 +9,19 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".IndentificationVictimeActivity">
+        </activity>
+        <activity android:name=".BilanComplementaireActivity">
+        </activity>
+        <activity android:name=".DetresseVitaleCardioCirculatoireActivity">
+        </activity>
+        <activity android:name=".DetresseVitaleRespiratoireActivity">
+        </activity>
         <activity android:name=".DetresseVitaleNeurologiqueActivity">
         </activity>
-        <activity android:name=".BilanUrgenceVitale">
+        <activity android:name=".BilanUrgenceVitaleActivity">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".AccueilActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

@@ -15,7 +15,6 @@
     <string name="si_pci">Si PCI</string>
     <string name="duree">Durée :</string>
 
-
     <string name="reaction">Réaction</string>
     <string name="ouvrir_yeux">Ouvre les yeux</string>
     <string name="pupilles">Pupilles\nsymétriques</string>
@@ -30,4 +29,21 @@
     <string name="sensibilite_jambes">Jambes</string>
 
     <string name="libelle_saisie">Taper ici pour écrire...</string>
+
+    <string name="frequence">Fréquence\n(/min) :</string>
+    <string name="reguliere">Regulière</string>
+    <string name="sens_etouffe">Sensation d'étouffement</string>
+    <string name="siffle">Sifflement, râles et gargouillements</string>
+    <string name="sueur">Sueur</string>
+    <string name="cyanose">Cyanose</string>
+    <string name="sp">SP O² :</string>
+    <string name="pourcent">%</string>
+    <string name="air">Air ambiant</string>
+    <string name="oxygene">O²</string>
+
+    <string name="cardio_circulatoire">Cardio-circulatoire</string>
+    <string name="pouls">Pouls radial</string>
+    <string name="paleur">Pâleur</string>
+    <string name="auto_ta">AUTO TA :</string>
+
 </resources>

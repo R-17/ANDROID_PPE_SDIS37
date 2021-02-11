@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        tools:context=".MainActivity" android:layout_centerHorizontal="false" android:layout_centerInParent="false"
+        tools:context=".AccueilActivity" android:layout_centerHorizontal="false" android:layout_centerInParent="false"
         android:layout_centerVertical="false" android:layout_gravity="center|center_horizontal|center_vertical">
     <LinearLayout
             android:orientation="horizontal"

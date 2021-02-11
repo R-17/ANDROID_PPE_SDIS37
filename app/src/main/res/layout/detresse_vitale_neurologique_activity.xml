@@ -5,7 +5,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".DetresseVitaleNeurologiqueActivity" android:background="@android:color/white">
+        tools:context=".DetresseVitaleNeurologiqueActivity"
+        android:background="@android:color/white">
 
     <LinearLayout
             android:orientation="horizontal"
@@ -26,7 +27,7 @@
                     android:id="@+id/ll_conscience">
                 <TextView
                         android:text="@string/conscience"
-                        android:id="@+id/txt_conscience"
+                        android:id="@+id/tv_conscience"
                         style="@style/tv_titre"
                         android:background="@drawable/txt_rectangle_bord_haut_gauche_rond"/>
                 <RelativeLayout
@@ -205,7 +206,7 @@
                         android:text="@string/sensibilite"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/txt_sensibilite"
+                        android:id="@+id/tv_sensibilite"
                         style="@style/tv_titre"
                         android:gravity="center"
                         android:layout_gravity="center"
@@ -281,16 +282,16 @@
                     android:text="@string/reaction"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/txt_reaction"
+                    android:id="@+id/tv_reaction"
                     style="@style/tv_titre"
                     android:background="@drawable/txt_rectangle_bord_haut_droit_rond"
                     android:gravity="center"
                     android:layout_gravity="center"/>
             <RelativeLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:id="@+id/rl_yeux"
+                    android:orientation="horizontal"
                     style="@style/rl_marge">
                 <TextView
                         android:id="@+id/tv_yeux"

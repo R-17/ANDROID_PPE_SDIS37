@@ -206,4 +206,19 @@
     <style name="rl_marge" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:layout_marginTop">2dp</item>
     </style>
+
+    <!-- RadioGroup -->
+    <style name="rg_normal" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!-- RadioButton -->
+    <style name="rb_normal" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
 </resources>
