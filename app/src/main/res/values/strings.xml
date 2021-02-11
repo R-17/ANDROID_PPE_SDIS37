@@ -46,4 +46,45 @@
     <string name="paleur">Pâleur</string>
     <string name="auto_ta">AUTO TA :</string>
 
+    <string name="nom">Nom :</string>
+    <string name="prenom">Prénom :</string>
+    <string name="ddn">Date de naissance :</string>
+    <string name="sexe">Sexe</string>
+    <string name="masculin">Masculin</string>
+    <string name="feminin">Féminin</string>
+    <string name="adresse">Adresse :</string>
+    <string name="cp">Code postal :</string>
+    <string name="ville">Ville :</string>
+
+    <string name="heure">Heure :</string>
+    <string name="divers">Divers :</string>
+    <string name="evacuation">Évacuation vers :</string>
+    <string name="par">Par :</string>
+    <string name="vsav">VSAV</string>
+    <string name="ambulance_privee">Ambulance privée</string>
+    <string name="helicoptere">Hélicoptère</string>
+    <string name="autre">Autre</string>
+    <string name="medicalisee">Médicalisée :</string>
+    <string name="avec">Avec</string>
+    <string name="sssm">SSSM</string>
+    <string name="smur">SMUR</string>
+    <string name="medecin_traitant">Médecin traitant</string>
+    <string name="intubation">Intubation :</string>
+    <string name="glasgow">Glasgow</string>
+    <string name="perfusion">Perfusion</string>
+    <string name="evolution">Évolution :</string>
+    <string name="aggravation">Aggravation</string>
+    <string name="stationnaire">Stationnaire</string>
+    <string name="amelioration">Amélioration</string>
+    <string name="refus_transport">Refus de transport</string>
+    <string name="deces">Décès</string>
+
+    <string name="heure_inital">Heure du bilan initial :</string>
+    <string name="date">Date :</string>
+    <string name="num_intervention">Numéro d'intervention :</string>
+    <string name="cs">Centre de secours :</string>
+    <string name="adresse_intervention">Adresse de l'intervention :</string>
+    <string name="chef_agres">Chef d'Agrès :</string>
+    <string name="signature">Signature: </string>
+
 </resources>
