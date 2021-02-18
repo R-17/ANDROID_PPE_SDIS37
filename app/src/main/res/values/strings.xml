@@ -32,7 +32,7 @@
 
     <string name="frequence">Fréquence\n(/min) :</string>
     <string name="reguliere">Regulière</string>
-    <string name="sens_etouffe">Sensation d'étouffement</string>
+    <string name="sens_etouffe">Sensation étouffement</string>
     <string name="siffle">Sifflement, râles et gargouillements</string>
     <string name="sueur">Sueur</string>
     <string name="cyanose">Cyanose</string>
@@ -45,6 +45,9 @@
     <string name="pouls">Pouls radial</string>
     <string name="paleur">Pâleur</string>
     <string name="auto_ta">AUTO TA :</string>
+
+    <string name="traumatique">Traumatique</string>
+    <string name="geste_secouriste">Gestes secouristes</string>
 
     <string name="nom">Nom :</string>
     <string name="prenom">Prénom :</string>
@@ -79,12 +82,51 @@
     <string name="refus_transport">Refus de transport</string>
     <string name="deces">Décès</string>
 
-    <string name="heure_inital">Heure du bilan initial :</string>
+    <string name="heure_inital">Heure du\nbilan initial :</string>
     <string name="date">Date :</string>
-    <string name="num_intervention">Numéro d'intervention :</string>
-    <string name="cs">Centre de secours :</string>
-    <string name="adresse_intervention">Adresse de l'intervention :</string>
-    <string name="chef_agres">Chef d'Agrès :</string>
-    <string name="signature">Signature: </string>
+    <string name="num_intervention">Numéro\ndlintervention :</string>
+    <string name="cs">Centre de\nsecours :</string>
+    <string name="adresse_intervention">Adresse de\nlintervention :</string>
+    <string name="chef_agres">Chef dAgrès :</string>
+    <string name="signature">Signature:</string>
+
+    <string name="validation">Valider la\nfiche bilan</string>
+
+    <string name="heure_incident">Heure présumée\nde l\'incident :</string>
+    <string name="lieu">Lieu :</string>
+    <string name="vie_privee">Vie privée</string>
+    <string name="travail">Travail</string>
+    <string name="voie_publique">Voie\npublique</string>
+    <string name="sport">Sport</string>
+    <string name="type">Type :</string>
+    <string name="precision">Précision :</string>
+    <string name="si_accident">Si accident de la voie publique</string>
+    <string name="blesse">Le blessé :</string>
+    <string name="contre">Contre :</string>
+    <string name="pieton">Piéton</string>
+    <string name="auto">Auto</string>
+    <string name="vehicule_agricole">Véhicule agricole</string>
+    <string name="cycliste">Cycliste</string>
+    <string name="bus">Bus</string>
+    <string name="train">Train</string>
+    <string name="moto">Moto</string>
+    <string name="poids_lourd">Poids lourd</string>
+    <string name="mur">Mur</string>
+    <string name="arbre">Arbre</string>
+    <string name="Si_conducteur_blesse">Si conducteur blessé</string>
+    <string name="hors_vehicule">Hors véhicule</string>
+    <string name="dans_vehicule">Dans véhicule</string>
+
+    <string name="immobilisation">Immobilisation</string>
+    <string name="rcp">RCP</string>
+    <string name="dsa">DSA</string>
+    <string name="collier_cervical">Collier cervical</string>
+    <string name="attelle">Attelle</string>
+    <string name="gel_eau">Gel d\'eau</string>
+    <string name="demi_assis">Demi assis</string>
+    <string name="plat_dos">Plat dos</string>
+    <string name="pls">PLS</string>
+    <string name="duree_rcp">Durée RCP</string>
+    <string name="debit_oxygene">Débit oxygène</string>
 
 </resources>

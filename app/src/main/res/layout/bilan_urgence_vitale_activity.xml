@@ -10,8 +10,8 @@
 
     <LinearLayout
             android:orientation="vertical"
-            android:layout_width="740dp"
-            android:layout_height="468dp"
+            android:layout_width="920dp"
+            android:layout_height="460dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,13 +55,11 @@
             <Button
                     android:text="@string/oui"
                     android:id="@+id/btn_conscience_oui"
-                    android:background="@drawable/btn_indice_non_gravite"
                     android:layout_toStartOf="@+id/btn_conscience_non"
                     style="@style/btn_indice_non_gravite_centre_gauche"/>
             <Button
                     android:text="@string/non"
                     android:id="@+id/btn_conscience_non"
-                    android:background="@drawable/btn_indice_gravite"
                     style="@style/btn_indice_gravite_centre_droite"/>
         </RelativeLayout>
         <RelativeLayout

@@ -11,7 +11,7 @@
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="920dp"
-            android:layout_height="565dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="460dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:id="@+id/ll_detresse_vitale_respiratoire"
@@ -23,7 +23,7 @@
                 android:background="@drawable/txt_rectangle_bords_hauts_ronds"/>
         <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="115dp"
+                android:layout_height="wrap_content"
                 android:id="@+id/rl_frequence"
                 android:orientation="horizontal"
                 style="@style/rl_marge">
@@ -62,7 +62,7 @@
         </RelativeLayout>
         <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:id="@+id/rl_sens_etouffe"
                 android:orientation="horizontal"
                 style="@style/rl_marge">
@@ -89,7 +89,7 @@
         </RelativeLayout>
         <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:id="@+id/rl_siffle"
                 android:orientation="horizontal"
                 style="@style/rl_marge">
@@ -116,7 +116,7 @@
         </RelativeLayout>
         <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:id="@+id/rl_sueur"
                 android:orientation="horizontal"
                 style="@style/rl_marge">
@@ -143,7 +143,7 @@
         </RelativeLayout>
         <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:id="@+id/rl_cyanose"
                 android:orientation="horizontal"
                 style="@style/rl_marge">
@@ -170,7 +170,7 @@
         </RelativeLayout>
         <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="117dp"
+                android:layout_height="wrap_content"
                 android:id="@+id/rl_sp"
                 android:orientation="horizontal"
                 style="@style/rl_marge">

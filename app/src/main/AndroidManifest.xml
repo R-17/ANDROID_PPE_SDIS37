@@ -9,6 +9,14 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".BilanCirconstancielAccidentActivity">
+        </activity>
+        <activity android:name=".BilanCirconstancielActivity">
+        </activity>
+        <activity android:name=".BilanComplementaireGesteActivity">
+        </activity>
+        <activity android:name=".ValidationActivity">
+        </activity>
         <activity android:name=".SurveillanceActivity">
         </activity>
         <activity android:name=".IndentificationVictimeActivity">

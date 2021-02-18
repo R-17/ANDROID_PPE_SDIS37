@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/rougeVif</item>
+        <item name="colorPrimaryDark">@color/rougeVif</item>
+        <item name="colorAccent">@color/gris</item>
     </style>
 
     <!-- Bouton -->
@@ -14,6 +14,17 @@
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/poppins</item>
+    </style>
+    <style name="btn_validation" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:background">@drawable/btn_validation</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:text">@string/validation</item>
     </style>
         <!-- Indice gravité -->
             <!-- Centre -->
@@ -27,6 +38,7 @@
         <item name="android:layout_alignParentRight">true</item>
         <item name="android:layout_centerInParent">true</item>
         <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@drawable/btn_indice_gravite</item>
     </style>
     <style name="btn_indice_non_gravite_centre_droite" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:textColor">@android:color/black</item>
@@ -56,6 +68,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerInParent">true</item>
         <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/btn_indice_non_gravite</item>
     </style>
             <!-- Haut -->
                 <!-- Emplacement à droite -->
@@ -99,7 +112,23 @@
         <item name="android:layout_marginRight">10dp</item>
     </style>
 
-
+    <style name="btn_carre_blanc_gauche" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/btn_carre_blanc</item>
+    </style>
+    <style name="btn_carre_blanc_droite" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/btn_carre_blanc</item>
+    </style>
 
     <!-- Texte -->
     <style name="tv_libelle_centre" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -195,11 +224,13 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">5dp</item>
         <item name="android:layout_marginRight">20dp</item>
-        <item name="android:text">@string/libelle_saisie</item>
+        <item name="android:hint">@string/libelle_saisie</item>
         <item name="android:textColor">@color/grisFonce</item>
         <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textStyle">italic</item>
+        <item name="android:background">@drawable/et_normal</item>
+        <item name="android:paddingLeft">5dp</item>
     </style>
 
     <!-- RelativeLayout -->
@@ -238,4 +269,18 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_centerInParent">true</item>
     </style>
+
+    <!-- Spinner -->
+    <style name="spn_normal" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/spn_normal</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
 </resources>

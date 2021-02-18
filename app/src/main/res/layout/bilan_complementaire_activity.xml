@@ -5,6 +5,27 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".BilanComplementaireActivity">
+        tools:context=".BilanComplementaireActivity"
+        android:background="@android:color/white">
 
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="920dp"
+            android:layout_height="460dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/ll_bilan_complementaire">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ll_rectangle_bords_droits"
+                android:id="@+id/ll_traumatique">
+            <TextView
+                    android:text="@string/traumatique"
+                    android:id="@+id/tv_traumatique"
+                    style="@style/tv_titre"
+                    android:background="@drawable/txt_rectangle_bords_hauts_ronds"/>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
