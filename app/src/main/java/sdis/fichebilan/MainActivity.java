@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         // création instanciation de l'outil SQLiteOpenHelper
         BDDFicheBilan maPremBase = new BDDFicheBilan(this);
         //création de ma BddSQLiteDatabase
-        SQLiteDatabase MaFicheBilan = maPremBase.getWritableDatabase();
+        //SQLiteDatabase MaFicheBilan = maPremBase.getWritableDatabase();
 
         //MaFicheBilan.close();
         //maPremBase.close();
