@@ -15,10 +15,11 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" android:background="@android:color/white">
         <ImageView
-                android:layout_width="359dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/lv_logo_sdis37"
-                android:src="@drawable/img_logo_sdis37" android:background="@android:color/white"/>
+                android:src="@drawable/img_logo_sdis37" android:background="@android:color/white"
+                android:layout_gravity="center" android:foregroundGravity="center"/>
     </LinearLayout>
     <LinearLayout
             android:orientation="vertical"
